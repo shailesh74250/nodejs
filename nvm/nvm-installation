@@ -1,0 +1,26 @@
+install nvm (node version manager)
+The Node Version Manager (NVM) is a command-line utility used to manage and switch between multiple active versions of Node.js on a single system. Whether you’re an admin or a developer, being able to change the javascript runtime environment on your system simplifies testing applications across different versions.
+
+
+steps for installing nvm
+- apt-get update -y
+- apt-get install build-essential libssl-dev -y
+- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
+steps for verify the installation
+- nvm --version
+- get all the commands of nvm 
+nvm help
+
+
+install node specific version nodejs version
+list of all available nodejs version
+nvm ls-remote  
+
+install nodejs
+nvm install 13
+
+switch between nodejs versions
+nvm install stable
+nvm current
+nvm use v13
